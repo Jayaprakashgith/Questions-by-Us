@@ -1,0 +1,100 @@
+1)What Automation Testing?
+Ans :Automation Testing is a software testing method that uses specialized tools or scripts to automatically execute test cases—without human intervention.
+
+@Common Tools:
+*Selenium (for web apps)
+*JUnit/TestNG (Java-based frameworks)
+*Appium (for mobile apps)
+*Cypress, Playwright, Postman (for frontend/backend/API testing)
+==================================================================================
+2)passing multiple values into a single field, function, or test case
+Ans:
+==================================================================================
+3)implicity and explicity wait
+Ans:
+Implicit wait sets a default timeout for all elements, making Selenium wait before throwing NoSuchElementException. 
+Explicit wait targets specific elements or conditions, waiting until they're ready (like clickable or visible).
+==================================================================================
+4)What are the locators in selenium?
+Ans:
+*byId
+*byName
+*byTagname
+*
+*
+==================================================================================
+5) What are the differences between CSS selectors and XPath?
+Ans :
+==================================================================================
+6)Advantages of automation testing
+Ans :
+*Faster Test excusion 
+*Expands coverage for different browsers, devices, and data 
+*Reduced Human Error 
+*Cost Cost-effectiveness
+==================================================================================
+7)Regression Testing:
+Ans:
+It is done to make sure the existing functionalities of the application is not impacted whenever any new functionalities is added to the application.
+==================================================================================
+8)Sanity Testing:
+Ans:
+Sanity Testing is done during the release phase to check the main functionalities of the application without going deeper. It is also called as a subset of Regression testing. At times due to release time constraints, regression testing can't be done to the build, in that case sanity testing does that part by checking main functionalities.
+==================================================================================
+9)
+Ans:
+The full form of TestNG is Test Next Generation.
+
+It's a powerful testing framework inspired by JUnit but designed to cover more test categories—like unit, functional, integration, and end-to-end testing. It's especially popular in Java-based automation, offering features like parallel test execution, grouping, data-driven testing, and detailed reports.
+==================================================================================	
+10)Purposes of JUnit?
+Ans:
+*Write And Run Tests 
+*Catch Bugs And Errors
+*Improve Code Quality
+*Facilitate Refactoring - Dev can Refactor They code with conf Knowing that changes won't break execting functions 
+==================================================================================
+11)how do you choose framework for your project?
+Ans:
+*Project Requirements
+*Team Expertise
+*Community & Support
+*Scalability & Flexibility
+*Testing & Tooling Support
+*Performance & Security
+==================================================================================
+12)Advantages of TestNG over JUnit
+Ans:
+
+=================================================================
+13)what is an xpath?
+Ans:
+XPath is a powerful query language used to navigate and locate elements in an XML or HTML document.
+=================================================================
+14)Bug Life Cycle?
+Ans:
+New-->  -->  -->   -->  -->  -->  --> -->
+=================================================================
+15)Login functionality?
+Ans:
+Like TestCases
+==============================================================================================
+==============================================================================================
+16)Agile Methodologies?
+Ans:
+1.Sprint Groooming:
+2.Sprint Planning:
+3.Daily Scrum Meeting (or) Daily Stand up calls:
+4.Sprint Review Meeting:
+5.Sprint Retrospective Meeting:
+==========================================================
+17)
+Ans:
+
+==================================================================================
+==================================================================================
+==================================================================================
+==================================================================================
+==================================================================================
+==================================================================================
+==================================================================================
