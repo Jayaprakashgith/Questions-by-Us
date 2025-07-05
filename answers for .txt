@@ -6,12 +6,13 @@ Ans :
    *JUnit/TestNG (Java-based frameworks)
    *Appium (for mobile apps)
    *Cypress, Playwright, Postman (for frontend/backend/API testing)
-==================================================================================
-2)passing multiple values into a single field, function, or test case
-Ans:
 
+==================================================================================
+2)Passing multiple values into a single field, function, or test case
+Ans:
+    
 =============================================================
-3)implicity and explicity wait
+3)Implicity and explicity wait
 Ans:
    *Implicit wait sets a default timeout for all elements, making Selenium wait before throwing NoSuchElementException. 
    *Explicit wait targets specific elements or conditions, waiting until they're ready (like clickable or visible).
@@ -25,15 +26,16 @@ Ans:
 
 ===============================================================
 5) What are the differences between CSS selectors and XPath?
-Ans :
+Ans:
+     Both are used to find the locator of the elements where using css Selector we can find locators in forward direction only ,but using xpath we can find in both forward direction and backward direction  
 
 ==================================================================================
 6)Advantages of automation testing
-Ans :
- *Faster Test excusion 
- *Expands coverage for different browsers, devices, and data 
- *Reduced Human Error 
- *Cost Cost-effectiveness
+Ans:
+    * Faster Test excusion 
+    * Expands coverage for different browsers, devices, and data 
+    * Reduced Human Error 
+    * Cost Cost-effectiveness
 
 ==================================================================================
 7)Regression Testing:
@@ -46,11 +48,11 @@ Ans:
     Sanity Testing is done during the release phase to check the main functionalities of the application without going deeper. It is also called as a subset of Regression testing. At times due to release time constraints, regression testing can't be done to the build, in that case sanity testing does that part by checking main functionalities.
 
 ==================================================================================
-9)
+9)Full form of TestNG
 Ans:
    * The full form of TestNG is Test Next Generation.
-   * It's a powerful testing framework inspired by JUnit but designed to cover more test categories—like unit, functional, integration, and end-to-end testing. It's        especially popular in Java-based automation, offering features like parallel test execution, grouping, data-driven testing, and detailed reports.
-
+   * It's a powerful testing framework inspired by JUnit but designed to cover more test categories—like unit, functional, integration, and end-to-end testing. It's          especially popular in Java-based automation, offering features like parallel test execution, grouping, data-driven testing, and detailed reports.
+ 
 ==================================================================================	
 10)Purposes of JUnit?
 Ans:
@@ -72,7 +74,7 @@ Ans:
 ==================================================================================
 12)Advantages of TestNG over JUnit
 Ans:
-
+    
 =================================================================
 13)what is an xpath?
 Ans:
@@ -81,7 +83,9 @@ Ans:
 =================================================================
 14)Bug Life Cycle?
 Ans:
-  New-->  -->  -->   -->  -->  -->  --> -->
+  New--> Assigned --> Open --> Fixed --> Pending Retest --> Retest --> Verified --> Closed 
+
+If it is Bug : Reopened --> Rejected --> Deferred --> duplicate --> not a bug 
 
 =================================================================
 15)Login functionality?
@@ -102,26 +106,30 @@ Ans:
 ==========================================================
 17)Set And Map?
 Ans:
- -->A Set in Java is a collection of unique elements, meaning that it does not allow duplicate values.
+ --->A Set in Java is a collection of unique elements, meaning that it does not allow duplicate values.
   Types:
-    1)LinkedHashSet 2)HashSet 3)TreeSet
+     1)LinkedHashSet 2)HashSet 3)TreeSet
 
- -->A Map in Java is a collection of key-value pairs, where each key is unique and maps to a specific value.
-   *Each key is unique
-   *Values can be duplicated
-   *Used to associate one thing (key) with another (value)
+ --->A Map in Java is a collection of key-value pairs, where each key is unique and maps to a specific value.
+    *Each key is unique
+    *Values can be duplicated
+    *Used to associate one thing (key) with another (value)
  Types:
-   1)LinkedHashMap 2)HashMap 3)TreeMap
+    1)LinkedHashMap 2)HashMap 3)TreeMap
 
 ==================================================================================
 18)Black Box Testing?
 Ans: 
-
+    * It is a softwate testing technique used by the tester with no knowledge of the internal workings of the software.the user only knows about the inputs and expected outputs of the system.
+(OR)
+    * Testing done without looking at the internal coding knowledge. It is done by testers.
 ==============================================================
 19)Find Element And Find Elements?
 Ans:
+    findElement  : A single WebElement
+    findElements : A List<WebElement>
 
-==================================================================================
+=============================================================
 20)What is a Try Catch and how do you use it?
 Ans:
   A try-catch block is a fundamental concept used to handle exceptions—unexpected errors that might occur during program execution
@@ -129,21 +137,23 @@ Ans:
 ==================================================================================
 21)What is Listeners in testNG?
 Ans:
+   listeners is used in TestNG , to run the failed test cases automatically
 
 ==================================================================================
 22)White Box Testing Technique?
-Ans:
+Ans: 
+    * Testing done based on applications internal coding knowledge. It is done by developers. 
+    * White Box Testing is also called as Glass Box, Clear Box, and Structural Testing. 
 
 ==================================================================================
 23)Page Factory Modal?
 Ans:  
-   *Page factory is extance of page object model(POM).
-   *In selenium that simplify object intialization and interaction with WebElement using annotations like @findBy.
+   *Page factory is extension of POM ,That simplify object intialization and interaction with WebElement using annotations like @findBy.
 
 ==================================================================================
 24) how do you Handling Alart AND Frames 
 Ans:
-
+   
 ==================================================================================
 25) Absolute xpath & Relative xpath ?
 Ans:
@@ -160,39 +170,103 @@ Ex:
 
 ==================================================================================
 26) Cross Browser & Parallel Execution 
+Ans:
 
+Cross Browser
+-------------- 
+       * It is a process of testing a web application or website on multiple browsers to ensure that it works on differents browsers and versions  
+       * With the help of switch case in baseclass we can achive it.
 
-==================================================================================
-27)
-
-==================================================================================
-28)
-
-==================================================================================
-29)
-
-==================================================================================
-30)
+Parallel Execution 
+------------------           
+       * It is a technique used in software testing where multiple tests are executed simultaneously.
 
 ==================================================================================
-31)
+27)What is list ?
+Ans:  
+     • Index Based One. 
+     • Allows Duplicate. 
 
 ==================================================================================
-32)
+28)STLC ?
+Ans:
+    --> Software Testing Life Cycle (STLC) is defined as a sequence of activities conducted to perform Software Testing.
+
+Phases of STLC:
+---------------
+   1.Requirement Analysis
+   2.Test Planning
+   3.Test Design
+   4.Test execution
+   5.Sign Off
 
 ==================================================================================
-33)
+29) Integration Testing?
+Ans:
+    Integration Testing is a key phase where individual modules are combined and tested as a group to ensure they work together correctly.
 
 ==================================================================================
-34)
+30) Acceptance Testing?
+Ans:
+     --> Satisfying client requirement
+     --> Done by client side 
+     --> To get approval from client.
+     
+==================================================================================
+31) FrameWork Explanations ?
+Ans:
+    Maven project --> Pom.XML --> Test Runner --> Features --> Hooks --> Step Defin --> Page object Manager --> Pages --> BaseClass
+==============================================================================
+ Api Response Time ? --> 200 MS
+==============================================================================
+32)Gray Box Testing?
+Ans:
+    It is Software testing technique that combines of black box testing and white box testing   
+==================================================================================
+33)Verification and Validation?
+Ans:
+   verification- verification focuses on ensuring that the product is built correctly .
+   Validation -  validation focuses on ensuring that the product meets the needs of its users.
 
 ==================================================================================
-35)
+34)Hard Assert and Soft Assert
+Ans:
+* Hard Assert:
+       It immediately stops the test execution if an assertion fails.
+
+* Soft Assert:
+       It allows the test to continue even if an assertion fails, collecting all failures to report at the end
 
 ==================================================================================
-36)
+35)Priority and Severity
+Ans: 
+  * Priority - priority refers to order in which the bug to be fixed based on the impact on the bussiness, user and system 
+  * Severity - Severity refers to the degree to which a defect affect their system
+     types- critical , major , minor.
 
 ==================================================================================
-37)
+36) Mutable And Immutable?
+Ans:
 
+==================================================================================
+37) How to You launch Mobile Application?
+Ans:
+    * we will add Java Clint Dep in Pom.XML
+    * We need to check the desired Capabilities 
+        1) DeviceName 
+        2) PlatformName 
+        3) PlatformVersion
+        4) AppPackage 
+        5) AppName
+
+==================================================================================
+38)How to interact with DropDown?
+Ans:
+
+==================================================================================
+39)What is Compatablity Testing?
+Ans:
+   It is the process of testing a software application to ensure that it is compatible with different hardware, software, and network configurations. It also checks access across different environments 
+==================================================================================
+==================================================================================
 ==================================================================================
