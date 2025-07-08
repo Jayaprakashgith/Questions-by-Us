@@ -1,0 +1,22 @@
+Eclipse Shortcuts
+==================
+   Change Between Editor - Ctrl+F6
+   Handle exception -F2
+   New class or interface - Alt+ Shift + N
+   Enter Line (start) - Shift + 
+   Enter Line (end) - Shift + 
+   Retun type - Ctrl + 2 + L
+   code format - Ctrl + Shift + F
+   Organize Imports - Ctrl +Shift + O
+   Delete a line - Ctrl + d 
+   Copy the line - Ctrl + Alt + DownArrow 
+   Run as Java Application - Alt + Shift + X and J
+   Run as TestNG - Alt + Shift + X and N
+   Run as JUnit - Alt + Shift + X and T
+   Close Window - Ctrl + W
+   Minimize and Maximize - Ctrl + M
+   Search a Method  - Ctrl + O
+   Go to Method or class - Ctrl + Click
+   Select a full line - Shift + End or Shift + Home
+
+------------------------------------------------------------------------------------------
