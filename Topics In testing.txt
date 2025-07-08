@@ -1,0 +1,639 @@
+					 Java
+					=======
+*)-> Oops
+    ------ 		
+       - Class,Method,Object
+
+*)-> Inheitance 
+     ------------
+	# Types of Inheritance 
+          ---------------------
+            1.Single Inheritance
+            2.Mutilevel Inheritance
+            3.Multiple Inheritance
+            4.Hierarchical Inheritance
+            5.Hybride Inheritance
+
+*)-> Polymorphism
+     -------------
+         1.Method Overloading
+	 2.Method Overriding
+            
+*)-> Abstraction
+     -------------
+        # Type of Abstraction
+          -------------------
+		1.Partial Abstraction(Abstract class)
+		2.Fully Abstraction (Interface)
+
+*)-> Encapsulation
+   ---------------
+	PoJo Class	-> Getters & Setters
+
+
+*)-> Notations         - Pascal,Camel
+
+*)-> DataType	      - Wrapper class
+
+*)-> Control Statement
+   ------------------- 
+      1.Condition Statement  - If, If else, Ladder If, Nested If, Switch Case   - Operator --> AND (&& - &), OR(|| - |)   
+      2.Looping Statement   - While, Do While, For, Nested For
+      3.Jumping Statement   - Break, Continue, System.exit(0)
+
+*)-> String
+   --------
+       Methods -Length, StartsWith, ToUpperCase, IndexOf, isEmpty, Equals, Replace, Concat, etc....
+
+*)-> Array 
+   -------
+	1.Single Dimensional Arrey
+	2.Two Dimensional Arrey
+
+*)-> Collection
+   ------------
+	1.List		-> Array List, Linked List,  
+	2.Set		-> Harsh Set, Linked Hashset, Treeset
+	3.Map		-> Harsh Map, Linked HashMap, TreeMap, HashTable
+
+*)-> Access Specifier
+   ------------------ 
+	1.Private, 2.default, 3.Protrcted, 4.Public
+
+*)->Type Of Variable 
+   -----------------
+	1.Local variable (Method Level Variable) 
+	2.Instance variable (Object Level Variable)
+	3.Static Variable (Class Level Variable)
+		Both Instance & Static variable 
+
+*)-> Constructor
+   -------------
+  	Class name & method Name Should be same
+
+*)-> Exception
+   -----------
+	1.RunTime      [Unchecked Exception]	-> Arithmetic, NullPointer, StringIndexOutOfBound, NumberFormat, InputMisMatch, NoSuchElement.
+	2.CompileTime  [Checked Exception]      -> FileNotFound, IONotFound, SqlNotFound, ClassNotFound.
+
+*)-> Exception Handling 
+   --------------------
+	1.Try, 2.Catch, 3.Finally 
+
+*)-> File Operations 
+   -----------------	
+	1.File, 2.FileUtils
+ 
+*)-> Throws
+    
+*)-> Scanner
+
+*)-> StackMemory ---> Tempory Memory
+ 
+====================================================================================================================================================================    						Selenium
+					       ===========
+
+*)-> Browser Launch
+
+*)-> Locators
+
+*)-> Xpath
+    -------  
+	-> Absolute Path
+	-> Relative Path
+
+*)-> Debug 
+
+*)-> Actions
+    ---------
+	1. Mouse Over Actions -> MoveToElement()
+	2. To Drag And Drop   -> dragAndDrop  ()	
+	3. Right Click Action -> contextClick ()       
+	4. Keboard Actions (Robot)
+	  ------------------
+		-> KeyPress ()	
+		-> KeyRelease ()
+	5. KeyDown(), KeyUp(), DoubleClick(), Sendkey()
+
+*)-> Alert
+    -------
+	1. Simple Alert   -> OK 		-> Accept 
+	2. Confirm Alert  -> Ok & Cancel	-> Accept & Dismiss
+	3. Prompt Alert   -> Text, Ok & Cancel	-> Accept & Dismiss & SendKeys & getText
+
+*)-> TakesScreenShot
+    -----------------  
+	1. FileUtils
+	2. Output Type
+
+*)-> JavaScriptExecutor 
+    --------------------
+	1. Enter Text Value 
+	2. Retrive the Value 
+	3. Click
+	4. Scroll Up & Scroll Down	
+
+*)-> DropDown 
+    ----------
+	1.SelectByIndex, 2.SelectByValue, 3.SelectByVisibleText, 4.getOption, 5.getAllSelectedOptions, 6.isMultiple, 7.deSelectAll
+ 
+*)-> Multiple DropDown
+    --------------------	
+	-> List
+
+*)-> Frames
+    --------
+	1.Iframe, 2.Frameset, 3.Frame
+
+*)-> Nested Frames 
+    
+*)-> Windows Handling
+    -------------------
+	1.getWindowHandle(), 2.getWindowHandles() 
+
+*)-> WebTable 
+
+*)-> Waits
+    -------
+   	> Static Wait  -> Thread.Sleep(MS)
+	> Dynamic Wait 
+	
+	1. Implicit Wait
+	2. Explicit Wait 
+	  ----------------
+		1. WebDriver Wait
+		2. Fluent Wait
+
+*)-> Get Vs Navigate
+*)-> FindElement Vs FindElements
+*)-> Implicity Wait Vs Explicity Wait
+
+====================================================================================================================================================================    
+						  FrameWork
+						 ===========
+
+*)-> OverView
+---------------
+	> Maven 	-> Build Tool 
+	> DataDriver	-> Maintain the TestData
+	> BaseClass	-> Maintain the reusable Method
+	> TDD 		-> JUnit, Testng
+	> BDD 		-> Cucumber
+	> Assertion	-> Verification & Validation	
+
+*)-> Build Tool
+    -------------
+	1.Maven 
+
+*)-> POM.XML
+    ---------
+ 	*.Dependency
+
+*)-> Data Driven	 --> Maintain The Test Data
+
+*)-> Excel      	
+    ---------
+            > .XLS, .XLSX
+	    > Replace/Modify/Update Data 
+
+*)-> Base Class		--> Maintain the reusable Method 
+
+*)-> Junit
+    --------
+	1.Annotations 
+  	--------------	
+		> @RunWith, @SuiteClass, @Ignore, @BeforeClass, @Before, @Test, @After, @AfterClass
+	
+	2.Assertion
+	------------
+		> AssertTrue(), AssertEquals() 
+	
+ 	3.Junit Report
+	---------------
+
+
+*)-> POM (Page Object Model)
+    -------------------------
+	> With Page Fectory :  @FindBy, @FindBys, @FindAll, @CacheLookUp
+	
+	> Without Page Factory  
+
+*)-> TestNG
+    --------
+	1.Annotations 
+  	--------------	
+		> @BeforeSuite, @BeforeTest, @BeforeClass, @BeforeGroup, @BeforeMethod, @Test, @AfterMethod, @AfterGroup, @AfterClass, @AfterTest, @AfterSuite
+
+	2.*Priority--> Position of testCase, *Enabled--> Ignore the testCase, *Invocation--> To run the Same Testcase in Multiple Time
+
+	3.Suite Level Execution
+	 -----------------------
+		* Parameters--> @parameters({"parameter Name"}) 
+		   * @optional --> When Passing Parameter is Mismatch in class, we use @optional Annotion 
+		
+		--> Passing Parameters in Test Level, In Suits Level, In Class Level.
+	
+
+	4. TestNg DataProvider  --> Passing the Bulk Of Data's to Same Field, Pass Both positive and Negative Combination of Data's  
+	-----------------------
+		* @DataProvider (name ="Data ProviderName")
+
+	5.Asserts
+	----------
+		1.Hard Assert, 2.Soft Assert
+
+	6.Grouping
+	-----------
+		1.Method Level, 2.Class Level, 3.TestLevel(Cross Brouser Test)
+
+	7.TestNg Report
+
+	8.ReRun
+		=============================================================================================
+						 Cucumber
+						==========
+
+*)-> BDD(Behaviour Driven Development) && TDD(Test Driven Development)
+
+*)-> BDD FrameWork Tools
+    --------------------
+	1. Cucumber
+	2. JBehave 
+	3. NBehave 
+	4. Specflow[C#]
+
+*)-> Cucumber Options
+    ------------------
+	features, glue, plugin, tag, dryRun, Snippert, name, publish, StepNotification, MonoChrome
+
+*)-> JVM Report 
+
+*)-> RunnerClass
+
+*)-> DataTable
+    -----------
+	1. 1D Without header 	--> asList
+	2. 2D Without header	--> asLists
+	3. 1D With header	--> asMap
+	4. 2D With header	--> asMaps
+
+DataTable--> Bulk of Data--> option
+	    Specific Steps 	
+ 
+
+*)-> Hooks
+    -------
+	@Before, @After 
+
+*)-> Tags
+
+**)-> Parallel Execution
+
+*)-> ReRun
+
+***)-> Cucumber Articu.....
+
+====================================================================================================================================================================    
+						 Mobile App Automation 
+						=======================
+*)-> Tools 
+    --------
+	* Appium,
+ 	* Appium Studio,
+	* Selendoid,
+	* Calabash,
+	* Robotium
+
+*)-> Natival, Mobile Web, Hybrid App
+
+*)-> Cloud Service 
+    ---------------
+	* BrowserStock,
+	* Sauce Labs,
+	* Perfecto,
+	* pCloudy,
+	* Experitest,
+	* Xamarin
+
+*)->    * Application, 
+	* Locator, 
+	* Execution Of WebBrowser, 
+	* Execution Of Mobile Device Apps, 
+	* Apps Type [Native, Mobile web, Hybride App],
+	* .Apk[playStore], .Ipa[appStore] & IOS[Iphone Operating Sysytem], 
+	* Appium Vs Appium Studio,
+	* Cloud
+
+*)-> Swipe Concept   
+
+*)-> Swipe to DropDown
+
+*)-> Project
+ 
+====================================================================================================================================================================    
+						    SQL
+						   =====
+*)-> DataBase, Tools, Languages
+
+*)-> Execution
+    ------------
+	From -> Where -> Select -> Order By 
+
+*)-> Relational Operator  
+    ---------------------
+	1. Distinct
+	2. Null
+	3. Between
+	4. As
+	5. Concationation (||)
+	6. In
+	7. Like
+	8. Dual	
+
+*)-> Cmd Prompt
+    ------------
+ 	We Also Run Sql in Cmd Prompt by " Sql Plaus USername/Password " 
+
+*)-> Group By
+
+*)-> Aggreagate Function 
+    ----------------------
+	Min, Max, Sum, Avg, Count
+
+*)-> Having
+
+*)-> D/B Where & Having ?
+
+*)-> Analytice Functions
+    ---------------------
+	1. Rank
+	2. Dense_Rank
+	3.Particular Rank
+
+*)-> DataType
+    ----------
+	Number, Char, VarChar, Long, Data, TimeStamp 
+
+*)-> Constraints
+    -------------
+	1. Primary Key
+	2. Foreign Key
+	3. Unique Key 
+	4. Not Null 
+	5. Check 
+
+**)-> Joins 
+     -------
+	1. InnerJoin / Equel Join
+	2. LeftJoin / leftOuterJoin
+	3. RightJoin / RightOuterJoin
+	4. FullJoin
+	5. CrossJoin
+	6. SelfJion	
+
+*)-> JDBC Connection (JavaDataBase Connection)
+
+*)->Sql Commands
+
+====================================================================================================================================================================    
+						 Manual Testing
+						================
+1.*)-> Software Testing:
+       ------------------
+	1. Functional Testing
+	2. Non Functional Testing
+
+*)-> Principles of Software Testing
+
+2.*)-> SDLC Overview:
+      ----------------
+	--> Software Development Life Cycle (SDLC) is a process used by the software industry to design, develop and test high quality software.
+
+*)-> Phases of SDLC:
+    -----------------
+	1. Requirement gathering and analysis
+	2. Design
+	3. Development 
+	4. Testing---->>STLC
+	5. Deployment
+	6. Operation and Maintanenece
+
+3.*)-> STLC:
+      -------
+	--> Software Testing Life Cycle (STLC) is defined as a sequence of activities conducted to perform Software Testing.
+
+*)-> Phases of STLC:
+    -----------------
+	1. Requirement Analysis
+	2. Test Planning
+	3. Test Design
+	4. Test execution
+	5. Sign Off
+
+4.*)-> Levels of Testing:
+      --------------------
+	1.Unit Testing - Developers
+	2.Integration Testing - Testers with help of developers
+	3.System Testing - Testers
+	4.Acceptance Testing - Client
+
+5.*)-> White Box Testing Technique:
+      -------------------------------
+	-> Testing done based on applications internal coding knowledge. It is done by developers. 
+	-> White Box Testing is also called as Glass Box, Clear Box, and Structural Testing. 
+
+  *)-> Black Box Testing Technique:
+      -------------------------------
+	-> Testing done without looking at the internal coding knowledge. It is done by testers.
+
+6.*)-> Different Types of Testing:
+      ------------------------------
+	1. Positive Testing
+	2. Negative Testing
+	3. Formal Testing
+	4. Informal Testing
+	5. Monkey Testing
+	6. ReTesting
+	7. Smoke Testing 
+	8. Regression Testing 
+	9. Sanity Testing
+	10. Beta Testing   
+	11. Live Environment Testing
+
+7.*)-> Testing Techniques:
+    ---------------------
+	1.Equivalence case partitioning Technique
+	2.Decision Table Technique
+	3.State Transition Technique
+	4.Boundary Value Analysis
+	5.Error Guessing Technique
+	6.Adhoc Testing
+
+8.*)-> SDLC Methodologies:
+      ----------------------
+	1.WaterFall Model
+	2.V-Model Of Testing
+	3.Iterative Model
+	4.Agile Model
+
+9.*)-> Agile Ceremonies:
+      -------------------
+	1.Sprint Groooming
+	2.Sprint Planning
+	3.Daily Scrum Meeting (or) Daily Stand up calls
+	4.Sprint Review Meeting
+	5.Sprint Retrospective Meeting
+
+*)-> Agile 
+       -------
+ 	[Note: Framework - Scrum and Kanban] 
+
+	Scrum:
+	------
+	  -->Roles
+ 	  -->Artifacts
+ 	  -->Cermonies
+
+	Roles:
+	------
+	Product Owner --> Product Owner defines requirements of the product, prioritize according to the market value & profitability and decides release date.
+	Scrum Master --> Scrum Master manages the team, responsible for setting up the team, scrum meeting invite.
+	Scrum Team --> Developers and Testers.
+
+10.*)-> Defect Life Cycle:
+       --------------------
+	  > New:
+	  > Assigned:
+	  > Open:
+	  > Fixed:
+	  > Pending Retest:
+	  > Retest:
+	  > Verfied:
+	  > Reopen:
+	  > Closed:
+	  > Duplicate:
+  	  > Not a Bug:
+	  > Deferred:
+	
+11.*)-> Priority and Severity
+
+12.*)-> Defect Management Tool/Test Management Tool:
+       ----------------------------------------------
+	 > JIRA
+
+13.*-> Other Important Questions
+
+14.*-> GIT & GITHub
+
+=====================================================================================================================================================================   
+						    Api
+						   ===== 
+
+*)-> Basic 
+    --------
+	1. Application Programming
+	2. Client <--> Server
+	3. Xml/Json
+	4. Platform Dept
+
+*)-> Read Value From Json	
+    -----------------------	
+	1. Json Object
+	2. Json Array  
+	3. Object Mapper
+	4. Json Path
+
+*)-> Write Value From Json
+    ------------------------  
+	Object Mapper()->C 
+	    --> WriteValue () ->m
+
+
+*)-> API
+    -----
+	1. REST[Representational State Transfer]
+	2. EndPoint / BaseUrl 
+	3. Resources 
+	4. Path Parameter 
+	5. Query Parameter
+	6. EndPoint Request URL Formation
+	7. Headers
+	8. Http Methods (Req Type)	
+	  -------------------------  
+ 		-> Get
+		-> Put
+		-> Post
+		-> Delete
+
+	9.REST Assured (API Automation Testing)
+
+*)-> Api ManualTesting 
+    -------------------
+	--> PostMan Tool
+	--> Swagger DOC
+	  --------------
+		> -H : HeaderName
+		> -d : PayLoad
+ 		> -f : FormData
+		> -x : Req Type		
+
+
+*)-> Authentication 
+    -----------------
+	=> Basic Authentication
+	------------------------
+		--> Preemptive Authentication 
+		--> Challenged Authentication
+
+	=> OAuth1 & OAuth2
+	=> Bcarer Authentication / JWT(Json Web Tokens) 
+
+
+*)-> Serialization[Write] 
+    ----------------------
+	Convert JavaObject to ResposeBody
+
+*)-> Deserialization[Read] 
+    -----------------------
+	Convert ResposeBody to JavaObject
+		Both use By Help of POJO Class
+
+*)-> Types of Variables
+    --------------------
+	1. Environmental Variable
+	2. Global Variable
+	3. Collection Variable
+	4. Data Variable
+	5. Local Variable
+
+*)-> Property File 
+
+*)-> Project
+
+====================================================================================================================================================================    
+						    IPT
+						   ===== 
+
+1.Xpath Functions & Xpath Axes
+
+2.Css Selector
+
+3.Selenium Exception & ChromeOptions
+
+4.Broken Links & Images
+
+5.Realtime OOPS
+
+6.Enumerator,Iterator & List Iterator
+
+7.Cucumber Architecture & Folder Structure
+
+8.Jenkins (CI/CD)
+
+9.Number Programming's [Logical]
+
+10.String Programming's [Logical]
+
+11.Arrays Programming's [Logical]
+
+=====================================================================================================================================================================   
