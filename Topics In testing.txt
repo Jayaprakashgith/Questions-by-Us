@@ -368,7 +368,7 @@ DataTable--> Bulk of Data--> option
     ---------------------
 	1. Rank
 	2. Dense_Rank
-	3.Particular Rank
+	3. Particular Rank
 
 *)-> DataType
     ----------
