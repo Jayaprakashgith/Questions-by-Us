@@ -46,7 +46,8 @@ Ans:
 ===============================================================
 13)what is an xpath?
 Ans:
-  XPath is a powerful query language used to navigate and locate elements in an XML or HTML document.
+  	* XPath is a powerful query language used to navigate and locate elements in an XML or HTML document.
+	* It is Used to find the locators in the Webpage 
 
 =================================================================
 5) What are the differences between CSS selectors and XPath?
@@ -334,3 +335,12 @@ Ans :
 43) Api Response Time ? --> 200 MS
 
 ==============================================================================
+					Junit
+
+.What is JUnit?
+	JUnit is a unit testing framework for Java used to write and run repeatable tests.
+
+.How does jUNit Work?
+		
+
+

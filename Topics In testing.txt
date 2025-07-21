@@ -33,7 +33,7 @@
 
 *)-> Notations         - Pascal,Camel
 
-*)-> DataType	      - Wrapper class
+*)-> DataType	     
 
 *)-> Control Statement
    ------------------- 
@@ -43,7 +43,7 @@
 
 *)-> String
    --------
-       Methods -Length, StartsWith, ToUpperCase, IndexOf, isEmpty, Equals, Replace, Concat, etc....
+       Methods -Length, StartsWith, ToUpperCase, IndexOf, isEmpty, Equals, Replace, Concat, etc..
 
 *)-> Array 
    -------
@@ -103,46 +103,62 @@
 	-> Relative Path
 
 *)-> Debug 
+    -------
+	Debugging is the process of identifying, analyzing, and fixing errors in a software program 
 
 *)-> Actions
     ---------
+	Actions refName = new Actions;	--> At end we need to add (.Perform)
+
 	1. Mouse Over Actions -> MoveToElement()
 	2. To Drag And Drop   -> dragAndDrop  ()	
 	3. Right Click Action -> contextClick ()       
-	4. Keboard Actions (Robot)
-	  ------------------
+	4. Keyboard Actions (Robot)
+	  --------------------------
 		-> KeyPress ()	
 		-> KeyRelease ()
 	5. KeyDown(), KeyUp(), DoubleClick(), Sendkey()
 
 *)-> Alert
     -------
+	Alert RefName = driver.switchTo().alert();
+
 	1. Simple Alert   -> OK 		-> Accept 
 	2. Confirm Alert  -> Ok & Cancel	-> Accept & Dismiss
 	3. Prompt Alert   -> Text, Ok & Cancel	-> Accept & Dismiss & SendKeys & getText
 
 *)-> TakesScreenShot
     -----------------  
+	TakesScreenshot refName = (TakesScreenshot)driver;
+
 	1. FileUtils
 	2. Output Type
 
 *)-> JavaScriptExecutor 
     --------------------
+	JavaScriptExecutor refName = (JavaScriptExecutor)driver;
+	
 	1. Enter Text Value 
 	2. Retrive the Value 
 	3. Click
 	4. Scroll Up & Scroll Down	
 
-*)-> DropDown 
-    ----------
-	1.SelectByIndex, 2.SelectByValue, 3.SelectByVisibleText, 4.getOption, 5.getAllSelectedOptions, 6.isMultiple, 7.deSelectAll
+*)->Select
+-----------
+	Select Refname = new select (WebElement refName)
+
+	1. DropDown 
+    	------------
+		1.SelectByIndex, 2.SelectByValue, 3.SelectByVisibleText, 4.getOptions, 5.getAllSelectedOptions, 6.isMultiple, 7.deSelectAll
  
-*)-> Multiple DropDown
-    --------------------	
-	-> List
+	2. Multiple DropDown
+    	--------------------	
+		-> List
 
 *)-> Frames
     --------
+	driver.switchTo().frame(byIndex,name,webelement)
+
 	1.Iframe, 2.Frameset, 3.Frame
 
 *)-> Nested Frames 
@@ -151,22 +167,43 @@
     -------------------
 	1.getWindowHandle(), 2.getWindowHandles() 
 
-*)-> WebTable 
+*)->WebTable 
+-------------	
+	WebTable is an HTML-Table that displays data in a tabular format on a web page. 	
+		     tr->td->th	
+
 
 *)-> Waits
     -------
    	> Static Wait  -> Thread.Sleep(MS)
 	> Dynamic Wait 
 	
-	1. Implicit Wait
+	1. Implicit Wait  --> driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	2. Explicit Wait 
 	  ----------------
-		1. WebDriver Wait
-		2. Fluent Wait
+		1. WebDriver Wait --> WebElement wRefName = driver.findElement(By.id(--));
+					 WebDriverWait waitRef = new WebDriverWait(driver, Duration.ofSeconds(20));
+					               waitRef.until(ExpectedConditions.visibilityOf(wRefName));
+		2. Fluent Wait    --> Wait<WebDriver> wait = new FluentWait<>(driver)
+							     .withTimeout(Duration.ofSeconds(30))               // Maximum wait time
+    							     .pollingEvery(Duration.ofSeconds(5))               // Check every 5 seconds
+    							     .ignoring(NoSuchElementException.class);
 
 *)-> Get Vs Navigate
+---------------------
+Get --> it use to launch WebPage 
+
+Navigate --> it is use to launch WebPage, refresh, nxt page, etcc....	
+	driver.navigate().to("https://example.com");
+	driver.navigate().refresh();       // Refresh page
+	driver.navigate().back();          // Go to previous page
+	driver.navigate().forward();       // Go to next page
+
 *)-> FindElement Vs FindElements
+---------------------------------
+
 *)-> Implicity Wait Vs Explicity Wait
+--------------------------------------
 
 ====================================================================================================================================================================    
 						  FrameWork
@@ -189,7 +226,8 @@
     ---------
  	*.Dependency
 
-*)-> Data Driven	 --> Maintain The Test Data
+*)-> Data Driven	
+         --> Maintain The Test Data
 
 *)-> Excel      	
     ---------
