@@ -1,0 +1,76 @@
+JP Copilot
+------------
+
+	Hi, my name is [Your Name], and I’m a passionate QA Engineer with 2.7 years of experience in both manual and automation testing. I specialize in building robust test frameworks and driving quality across the development lifecycle.
+
+	I’m proficient in automation tools like Selenium WebDriver with Core Java, and I’ve worked extensively with BDD frameworks using Cucumber alongside TestNG. My expertise includes implementing Page Object Model and Data-Driven approaches to ensure modular and scalable automation.
+
+	I’ve collaborated in Agile environments using tools like Jira and Azure DevOps, and contributed to CI/CD pipelines via Jenkins and Maven integration. I also have hands-on experience in API testing using Rest Assured and Postman/SoapUI, backed by solid knowledge of SQL for database validations. My familiarity with qTest helps me ensure efficient test management and traceability.
+
+	I’m a committed team player who thrives on solving complex quality challenges and continuously learning to improve processes and tools.
+=======================================================================================================================================================================
+JP ChartGPT
+------------
+
+✅ Self-Introduction:
+	Hello, my name is [Your Name], and I have 2.7 years of experience in Software Testing, specializing in both Manual and Automation Testing. I have worked extensively in Agile environments, contributing to multiple phases of the software development lifecycle, including requirement analysis, test planning, test execution, and defect management.
+
+	On the automation side, I have strong hands-on experience in Selenium WebDriver with Core Java, following industry-standard frameworks such as Page Object Model, Data-Driven Testing, and BDD with Cucumber. I’ve also worked with TestNG, Maven, and Jenkins for test execution and CI/CD integration.
+
+	I am proficient in API testing using Rest Assured and Postman, and have also used SOAP UI for SOAP-based service testing. For version control, I use Git/GitHub, and for defect and project tracking, I’ve worked with JIRA, Azure DevOps, and QTest.
+
+	With my combined skill set and experience, I aim to deliver high-quality, bug-free software by ensuring robust test coverage and continuous feedback throughout the development process.
+
+✅ Roles and Responsibilities:
+📌 Manual Testing:
+	Analyzed requirements and created detailed test scenarios, test cases, and test data.
+
+	Performed functional, regression, smoke, and UI testing.
+
+	Participated in Agile ceremonies such as daily stand-ups, sprint planning, and retrospectives.
+
+	Logged and tracked defects using JIRA, ADO, and QTest.
+
+	Collaborated closely with developers and business analysts to resolve issues and clarify requirements.
+
+📌 Automation Testing (Selenium with Java):
+	Developed automation scripts using Selenium WebDriver with Core Java.
+
+	Implemented Page Object Model and Data-Driven Frameworks for scalability and maintainability.
+
+	Used BDD with Cucumber to create feature files and step definitions for behavior-driven testing.
+
+	Integrated test scripts with TestNG and managed dependencies using Maven.
+
+	Scheduled and executed automation suites using Jenkins as part of the CI/CD pipeline.
+
+	Maintained test scripts in version control using Git/GitHub.
+
+📌 API Testing:
+	Created and executed test cases for RESTful APIs using Postman and Rest Assured.
+
+	Validated response codes, payloads, headers, and schema.
+
+	Performed automated API testing as part of integration testing.
+
+📌 Database Testing:
+	Wrote SQL queries to validate data integrity and perform backend testing.
+
+📌 Process and Tools:
+	Followed Agile methodology for iterative delivery.
+
+	Documented test results, test coverage, and provided feedback during retrospectives.
+
+	Used JIRA, ADO, and QTest for test and defect management
+
+=======================================================================================================================================================================
+
+Vicky BRo
+----------
+
+	"Hello, my name is [Your Name], and I have 4.3 years of experience working as a software tester. Over the years, I’ve been involved in both manual and automation testing across different domains such as [mention domain, e.g., banking, e-commerce, healthcare]. I have hands-on experience with tools like Selenium, JIRA, Postman, and TestNG, and I’m familiar with Agile methodologies.
+
+	I’ve worked closely with development teams to ensure high-quality product releases, written detailed test cases, identified and reported bugs, and contributed to process improvements. I’m passionate about delivering quality software and continuously improving my testing skills. I’m currently looking for opportunities where I can grow further, contribute to challenging projects, and work in a collaborative environment."
+
+=======================================================================================================================================================================
+

@@ -633,12 +633,31 @@ Ans :
 	✅ After login, the server sends a token to the client, which is then sent in requests via the Authorization header.
 		The server verifies the token to allow or deny access — no session storage needed!
 
+.What is JSON, JSONPath, JSONObject and JSONArray? 
+	•JSON (JavaScript Object Notation) is used for representing structured data in API responses for transmitting data between the client and server in RESTful 	  APIs. 
+	•JSONPath is a query language used for navigating and extracting specific elements or data from JSON document 
+	•JSONObject is an object representation of JSON data, where data is stored as key-value pairs. 
+	•JSONArray is a data structure used to represent an array (or list) of values in JSON. It can hold multiple elements, which can be of any data type, including 	  other JSON objects or arrays. 
 
+.Difference Between Serialization and Deserialization 
+	•Serialization is the process of converting an object into a data format (byte stream, JSON, XML). 
+	•Deserialization is the process of converting serialized data back into an object. 
 
+.What is Webservices and API Testing? 
+	•Web Services Testing focuses on testing services that communicate over a network, such as SOAP or REST. It focuses on testing communication between client and 	  server using web protocols. 
+	•API Testing focuses on testing any kind of API (including web services, database APIs, etc.). It focuses on testing any system-level API, including non-web-  	  based APIs. 
 
+---------------------------------------------------------------------------------------------------------------------------
+				Postman
 
+.What is Postman?
+	` It is an api testing tool 
+	` used to hit the http request in backEnd
 
+.Whats is collection?
+	A group of API requests that can be executed together
 
+.how to run a collection ?
 
 
 
@@ -650,52 +669,6 @@ Ans :
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+======================================================================================================================================================
 
 
