@@ -1,8 +1,0 @@
-Eclipse 	--> IDE [Intergration Developement Enviroment] 
-Selenium 	--> Web Based Automation Tool
-Maven		--> Build Management Tool (or) Project Management Tool
-JIRA		--> Test Management & Defect Tracking Tool
-GIT		--> Source Code Management Tool (or) Version Control Tool
-PostMan		--> Api Manual Testing
-RestAssured	--> Api Automation Testing
-Appium		--> Mobile Automation Testing 
