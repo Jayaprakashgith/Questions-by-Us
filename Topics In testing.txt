@@ -36,55 +36,55 @@
 *)-> DataType	     
 
 *)-> Control Statement
-   ------------------- 
+    ------------------- 
       1.Condition Statement  - If, If else, Ladder If, Nested If, Switch Case   - Operator --> AND (&& - &), OR(|| - |)   
       2.Looping Statement   - While, Do While, For, Nested For
       3.Jumping Statement   - Break, Continue, System.exit(0)
 
 *)-> String
-   --------
+    --------
        Methods -Length, StartsWith, ToUpperCase, IndexOf, isEmpty, Equals, Replace, Concat, etc..
 
 *)-> Array 
-   -------
+    -------
 	1.Single Dimensional Arrey
 	2.Two Dimensional Arrey
 
 *)-> Collection
-   ------------
+    ------------
 	1.List		-> Array List, Linked List,  
 	2.Set		-> Harsh Set, Linked Hashset, Treeset
 	3.Map		-> Harsh Map, Linked HashMap, TreeMap, HashTable
 
 *)-> Access Specifier
-   ------------------ 
+    ------------------ 
 	1.Private, 2.default, 3.Protrcted, 4.Public
 
-*)->Type Of Variable 
-   -----------------
+*)-> Type Of Variable 
+    ------------------
 	1.Local variable (Method Level Variable) 
 	2.Instance variable (Object Level Variable)
 	3.Static Variable (Class Level Variable)
 		Both Instance & Static variable 
 
 *)-> Constructor
-   -------------
+    -------------
   	Class name & method Name Should be same
 
 *)-> Exception
-   -----------
+    -----------
 	1.RunTime      [Unchecked Exception]	-> Arithmetic, NullPointer, StringIndexOutOfBound, NumberFormat, InputMisMatch, NoSuchElement.
 	2.CompileTime  [Checked Exception]      -> FileNotFound, IONotFound, SqlNotFound, ClassNotFound.
 
 *)-> Exception Handling 
-   --------------------
+    --------------------
 	1.Try, 2.Catch, 3.Finally 
 
 *)-> File Operations 
-   -----------------	
+    -----------------	
 	1.File, 2.FileUtils
  
-*)-> Throws
+*)-> Throw & Throws
     
 *)-> Scanner
 
@@ -108,14 +108,14 @@
 
 *)-> Actions
     ---------
-	Actions refName = new Actions;	--> At end we need to add (.Perform)
+	Actions refName = new Actions(driver); --> At end we need to add (.Perform)
 
 	1. Mouse Over Actions -> MoveToElement()
 	2. To Drag And Drop   -> dragAndDrop  ()	
 	3. Right Click Action -> contextClick ()       
 	4. Keyboard Actions (Robot)
 	  --------------------------
-		-> KeyPress ()	
+		-> KeyPress ()
 		-> KeyRelease ()
 	5. KeyDown(), KeyUp(), DoubleClick(), Sendkey()
 
@@ -143,8 +143,8 @@
 	3. Click
 	4. Scroll Up & Scroll Down	
 
-*)->Select
------------
+*)-> Select
+    --------
 	Select Refname = new select (WebElement refName)
 
 	1. DropDown 
@@ -200,17 +200,17 @@ Navigate --> it is use to launch WebPage, refresh, nxt page, etcc....
 	driver.navigate().forward();       // Go to next page
 
 *)-> FindElement Vs FindElements
----------------------------------
+    -----------------------------
 
 *)-> Implicity Wait Vs Explicity Wait
---------------------------------------
+    ----------------------------------
 
 ====================================================================================================================================================================    
 						  FrameWork
 						 ===========
 
 *)-> OverView
----------------
+   -----------
 	> Maven 	-> Build Tool 
 	> DataDriver	-> Maintain the TestData
 	> BaseClass	-> Maintain the reusable Method
@@ -252,7 +252,7 @@ Navigate --> it is use to launch WebPage, refresh, nxt page, etcc....
 
 *)-> POM (Page Object Model)
     -------------------------
-	> With Page Fectory :  @FindBy, @FindBys, @FindAll, @CacheLookUp
+	> With Page Factory :  @FindBy, @FindBys, @FindAll, @CacheLookUp
 	
 	> Without Page Factory  
 
@@ -287,7 +287,8 @@ Navigate --> it is use to launch WebPage, refresh, nxt page, etcc....
 	7.TestNg Report
 
 	8.ReRun
-		=============================================================================================
+
+       =============================================================================================
 						 Cucumber
 						==========
 

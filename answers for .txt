@@ -5,7 +5,7 @@ Ans :
    *Selenium (for web apps)
    *JUnit/TestNG (Java-based frameworks)
    *Appium (for mobile apps)
-   *Cypress, Playwright, Postman (for frontend/backend/API testing)
+   *Postman (for API testing)
 
 ==================================================================================
 6)Advantages of automation testing
@@ -15,7 +15,7 @@ Ans:
     * Reduced Human Error 
     * Cost Cost-effectiveness
 
-==================================================================================
+==========================================================================
 2)Passing multiple values into a single field, function, or test case
 Ans:
 	1. Use DataProviders (In TestNg)
@@ -28,11 +28,20 @@ Ans :
 	2. Read Data from Excel --> Use XSSFWorkbook for .xlsx files and HSSFWorkbook for .xls
 	3. Use @DataProvider in TestNG to feed test data From Excel.
 
-========================================================================
+==============================================================
 3)Implicity and explicity wait
 Ans:
    	*Implicit wait sets a default timeout for all elements, making Selenium wait before throwing NoSuchElementException. 
-   	*Explicit wait targets specific elements or conditions, waiting until they're ready (like clickable or visible).
+   	 	--> driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+	*Explicit wait targets specific elements or conditions, waiting until they're ready (like clickable or visible).
+		1. WebDriver Wait --> WebElement wRefName = driver.findElement(By.id(--));
+					 WebDriverWait waitRef = new WebDriverWait(driver, Duration.ofSeconds(20));
+					               waitRef.until(ExpectedConditions.visibilityOf(wRefName));
+		2. Fluent Wait    --> Wait<WebDriver> wait = new FluentWait<>(driver)
+							     .withTimeout(Duration.ofSeconds(30))               // Maximum wait time
+    							     .pollingEvery(Duration.ofSeconds(5))               // Check every 5 seconds
+    							     .ignoring(NoSuchElementException.class);
 
 ==============================================================
 4)What are the locators in selenium?
@@ -46,7 +55,7 @@ Ans:
 ===============================================================
 13)what is an xpath?
 Ans:
-  	* XPath is a powerful query language used to navigate and locate elements in an XML or HTML document.
+  	* XPath is a query language used to navigate and locate elements in an XML or HTML document.
 	* It is Used to find the locators in the Webpage 
 
 =================================================================
@@ -72,7 +81,8 @@ Ex:
 9)Full form of TestNG
 Ans:
    	* The full form of TestNG is Test Next Generation.
-   	* It's a powerful testing framework inspired by JUnit but designed to cover more test categories—like unit, functional, integration, and end-to-end testing. It's especially popular in Java-based automation, offering features like parallel test execution, grouping, data-driven testing, and detailed reports.
+   	* It's a testing framework inspired by JUnit but designed to cover more test categories—like unit, functional, integration, and end-to-end testing.
+	* It's especially popular in Java-based automation, offering features like parallel test execution, grouping, data-driven testing, and detailed reports.
  
 ==================================================================================	
 10)Purposes of JUnit?
@@ -337,338 +347,3 @@ Ans :
 
 
 ======================================================================================================================================================
-					Junit
-
-.What is JUnit?
-	JUnit is a unit testing framework for Java used to write and run repeatable tests.
-
-.How does jUNit Work?
-	verifies Assertion & reports Results
-=================================================================================
-					Cucumber
-.What is Cucumber?
-	It is a software Testing tools used to write & run testcases based of Bdd
-
-.Purpose or Benefites of cucumber?
-	Collabration friendly, Non-coders can easily Understand)		
-
-.How do you execute cucumber test?
-	Using testrunner class, with help of @Runwith & @CucumberOptions run the testscenerio and also generate JVM reports
-
-.Purpose of hooks?
-	It allows method of code before or after every scenario 
-
-.What is step definition in cucumber?
-	* It maps Gherkin steps (like Given, When, Then) to code implementation.
-	* When Cucumber runs a scenario, it looks for a matching step definition and executes the connected method.	
-
-.How to share data between steps in cucumber?
-	* Use instance variables in the same class to share simple data.
-	* Apply Dependency Injection (e.g. PicoContainer) for scalable sharing across classes.
-
-.Basic Requirements to run cucumber TestCase ?
-	* JDK & JRE
-(or)
-	* To run Cucumber tests, install the JDK, and configure Maven/Gradle for dependencies. Write feature files in Gherkin syntax and map them to Java step definitions. Create a test runner class with @RunWith(Cucumber.class) and run it in IDE or command line
-===============================================================================================================================
-					TestNG
-.Cross Browser Testing?
-	* To run Webapplication or website on multiple browser to ensure compatibility and functionality
-(Or)
-	* Cross Browser Testing is a quality assurance process that ensures your website or web application works consistently across different browsers, devices, and operating systems
-
-.Parallel Execution?
-	* Parallel Execution is a technique used in software testing to run multiple tests or tasks simultaneously, one after the other. This speeds up the testing process and improves efficiency.
-
-.listeners?
-	
-
-.IRetryAnalyzer?
-	IRetryAnalyzer is a TestNG interface that lets you automatically retry failed tests-that fail due to network glitches, timing issues, or other intermittent problems.
-=======================================================================================================================================================
-					API
-
-.Api 
-	it is a set of action, allows one software system to communicate with another software system 
-
-
-.Input Validation?
-	Process of verifying data received from client is accurate, complete, and conforms to expected standards
-
-.Api documentation?
-	API documentation is a developer guide that explains how to interact with an API. It includes details like endpoints, request methods (GET, POST, etc.), input parameters, response formats, authentication steps, and error codes
-
-.Synchronous & Asynchronous?
-	🧭 Synchronous API
-		`The client waits for the server to respond before continuing.
-		`Like a phone call: you ask, then wait for an answer.
-		`Best for real-time tasks like login, payment, or data retrieval.
-	⚡ Asynchronous API
-		`The client doesn’t wait—it sends a request and moves on.
-		`Like sending an email: you don’t wait by the inbox.
-		`Ideal for long-running tasks like video processing or bulk uploads.
-
-.Rare limiting?
-	Technique used to control the amount of incoming request to  an api 
-
-.Types of api?
-	`Open/Public APIs	: Available to anyone. Great for third-party developers (e.g., Google Maps API).
-	`Internal/Private APIs	: Used only within an organization to connect internal systems.
-	`Partner APIs		: Shared with specific external partners under strict access controls.
-	`Composite APIs		: Allow multiple endpoints to be accessed in a single cell
-
-.REST?
-	` Representational State Transfer
-	` Each request from client comtains all the information needed to process it.
-	` Uses HTTP methods
-
-.RESTFUL API?
-	A RESTful API is a web service that follows REST principles, using standard HTTP methods to interact with resources
-
-.SOAP?
-	` SOAP stands for Simple Object Access Protocol 
-	` it's a protocol used to exchange structured information in webservice 
-
-.Rest & SOAP?
-	🔧 `REST is simple and flexible. 
-	   `light weight,uses standard HTTP Methods
-
-	🛡️ `SOAP is secure and structured.
-	   `It is Protocol based & relies on XML
-
-.HTTP Methods?
-	`GET	: Retrieve data from server	
-	`POST	: Send data to server	
-	`PUT	: Update entire resource	 
-	`PATCH	: Update part of a resource	
-	`DELETE : Remove a resource
-
-.commonly used tool for Api?
-	Postman, SoapUI, Swagger, Jmeter, RestAssured
-
-.RestAssured ?
-	It is a popular Java-based library used for automated testing of RESTful APIs.
-
-.RestAssured Can Do
-	` Send GET, POST, PUT, DELETE requests easily.
-	` Validate status codes, headers, and response bodies.
-	` Handle authentication, cookies, and query parameters.
-	` Integrate with JUnit or TestNG for test automation.
-	` Support JSON and XML response parsing
-
-.Versioning in api?
-	` It's a way to update APIs without breaking old versions.
-	` It can be done with URL path, query parameters, or headers.
-
-.CORS?
-	` Cross-Origin Resource Sharing
-	` It is a Security feature that allow or restric request from another domain
-
-.Webhooks?
-	User defined HTTP callback,that triggered by specific events allowing realtime data updates	
-(or)
-	` Webhooks let one app notify another when an event occurs—automatically and instantly.
-	` Instead of polling, they push data in real time via HTTP POST requests.
-	` Commonly used for payments, alerts, or syncing data across systems.
-
-.MockAPI (Similr to stubs)?
-	` MockAPI lets you create fake RESTful APIs to test and develop apps without a real server.
-	` It supports HTTP methods and generates realistic mock data
-
-.PreRequest?
-	Set of actions to be performed before request 
-
-.URI & URL?
-	🌐URI (Uniform Resource Identifier)
-		` A string that identifies a resource by name, location, or both.
-		` Can be a URL, a URN, or any identifier.
-		` Example: urn:isbn:0-486-27557-4 (identifies a book, not its location)
-
-	🌐 URL (Uniform Resource Locator)
-		` A type of URI that specifically gives the location of a resource.
-		` Includes protocol (like http, ftp) and path.
-		` Example: https://example.com/page.html (tells where and how to access it)
-
-.PathParameter & Query Parameter?
-	🔹 Path Parameter
-		` Part of the URL path (e.g., /users/123)
-		` Used to identify specific resources
-		` Required for the endpoint to work
-
-	🔸 Query Parameter
-		` key-value pair added after end of URL (e.g., ?sort=price)
-		` Used for filtering the result of request, sorting, or optional data
-		` Optional and flexible
-
-.Types od authorisation?
-	` API Key		: A secret code you use to access a service.
-	` Bearer token		: A special ticket that proves you're allowed in.
-	` Basic Autentication 	: You give your username and password to log in.
-	` Oauth			: A smart way to sign in using another trusted service (like Google)
-
-.Serialization & Deserialization in APi?
-	` Serialization 	: Changing data (like an object) into a format (like JSON)
-	` Deserialization	: Changing format (like JSON) into a data (like an object) 
-
-.Json , json path, json object, json array?
-	` JSON		: A format used by APIs to send and receive data clearly.
-	` JSON Object	: Contains data as key-value pairs inside {}—like a person's info.
-	` JSON Array	: A list of items inside []—like a bunch of users or messages.
-	` JSON Path	: A way to find specific data inside a JSON response—like a search shortcut.
-
-.Webservice & Api Testing?
-	🧪 Web Service Testing
-		` Tests how well a web service (like SOAP or REST) communicates between systems.
-		` Checks if the service responds correctly with valid input and handles errors.
-	🔍 API Testing
-		` Focuses on testing APIs directly—without using a UI.
-		` Verifies endpoints, data formats (like JSON or XML), status codes, authentication, and business logic.
-		` Common tools: Postman, SoapUI, Rest Assured.
-	* Both help ensure smooth communication and data exchange in software.
-
-.Client-Server Architecture?
-	` Client	: A device or app (like a browser or mobile app) that requests data or services.
-	` Server	: A powerful system that processes those requests and sends back the needed data.
-	` How it works	: The client sends a request → the server processes it → the server sends a response.
-
-.Request & Response in API?
-	` A Request is sent by the client to ask the server for data or to perform an action.
-	` A Response is sent by the server back to the client with data and a status code.
-	` APIs use this back-and-forth to exchange information smoothly.
-
-.JSON & XML?
-	* JSON (JavaScript Object Notation)
-		` JSON is light, fast, and commonly used in modern APIs.
-		` JSON uses key-value pairs{} and arrays[] 
-		` JSON is easier to read and write
-
-	* XML (eXtensible Markup Language)
-		` XML is more detailed and used in older systems or SOAP APIs
-		` XML uses <tags> like HTML for structure
-		` XML is more formal and flexible.
-
-
-.CRUD?
-	C — Create : Add new data using the POST method 
-	R — Read   : Fetch data using the GET method 
-	U — Update : Change existing data using PUT or PATCH 
-	D — Delete : Remove data using the DELETE method 
-
-.Authorization & Authentication in APIs
-	` Authentication confirms who you are — like logging in.
-	` Authorization controls what you're allowed to do — like which actions or data you can access.
-
-.API headers?
-	` API headers send extra info along with HTTP requests/responses.
-	` Common ones include Authorization (for tokens), Content-Type, and Accept.
-	` They help handle authentication, format of data, and client-server communication.
-
-.payload?
-	a payload is the actual data sent in a request or received in a response — like the contents of a package 📦.
-		` In a request, it's the info you send to the server (e.g. user details in JSON).
-		` In a response, it's the data the server sends back (e.g. search results).
-		` It’s usually found in the body of HTTP messages and formatted as JSON, XML, etc.
-
-.Types of Payload?
-	` JSON		: Lightweight and human-readable, great for modern APIs.
-	` XML		: Structured and verbose, often used in older systems.
-	` Form Data	: Key-value pairs sent from forms, common for file uploads.
-	` Binary Files	: Used for sending images, videos, or other media.
-	` Plain Text	: Simple unformatted text — minimal and direct.
-	` GraphQL	: Flexible query structure for retrieving exactly the data you need.
-
-
-.Status code for POST ?
-	✅ Success Codes
-		200 OK
-		201 Created
-		202 Accepted
-		204 No Content
-	❌ Error Codes
-		400 Bad Request
-		401 Unauthorized
-		403 Forbidden
-		422 Unprocessable Entity
-
-.Status code in API?
-	ℹ️ Informational responses
-		100 - Continue
-	✅ Success Codes
-		200 - OK
-		201 - Created
-		202 - Accepted
-		203 - Non-Authoritative Information
-		204 - No Content
-	🔁 Redirection
-		301 - Moved Permanently
-		302 - Found
-	⚠️ Client Error Codes
-		400 - Bad Request 
-		401 - Unauthorized
-		403 - Forbidden * 
-		404 - Not Found 
-		405 - Method Not Allowed
-		415 - Unsupported Media Type
-		429 - Too Many Requests 
-		422 - Unprocessable Entity
-	💥 Server Error Codes
-		500 - Internal Server Error
-		501 - Not Implemented
-		502 - Bad Gateway 
-		503 - Service Unavailable 
-		504 - Gateway Timeout
-		505 - HTTP Version Not Supported
-
-.Types of Variable?
-	🌍 Global	: Works in every request—good for common values like API keys.
-	🌱 Environment	: Changes with different setups (like dev or live servers).
-	📦 Collection	: Used for related requests grouped together.
-	🧪 Local		: Used only in one place, for short-term use.
-	📂 Data		: Comes from files—useful for testing many inputs quickly.
-
-.JWT ?
-	JWT stands for JSON Web Token
-	🔐 JWT is a compact token used for user authentication and secure data exchange.
-		It has 3 parts: Header, Payload (with user data), and Signature.
-	✅ After login, the server sends a token to the client, which is then sent in requests via the Authorization header.
-		The server verifies the token to allow or deny access — no session storage needed!
-
-.What is JSON, JSONPath, JSONObject and JSONArray? 
-	•JSON (JavaScript Object Notation) is used for representing structured data in API responses for transmitting data between the client and server in RESTful 	  APIs. 
-	•JSONPath is a query language used for navigating and extracting specific elements or data from JSON document 
-	•JSONObject is an object representation of JSON data, where data is stored as key-value pairs. 
-	•JSONArray is a data structure used to represent an array (or list) of values in JSON. It can hold multiple elements, which can be of any data type, including 	  other JSON objects or arrays. 
-
-.Difference Between Serialization and Deserialization 
-	•Serialization is the process of converting an object into a data format (byte stream, JSON, XML). 
-	•Deserialization is the process of converting serialized data back into an object. 
-
-.What is Webservices and API Testing? 
-	•Web Services Testing focuses on testing services that communicate over a network, such as SOAP or REST. It focuses on testing communication between client and 	  server using web protocols. 
-	•API Testing focuses on testing any kind of API (including web services, database APIs, etc.). It focuses on testing any system-level API, including non-web-  	  based APIs. 
-
----------------------------------------------------------------------------------------------------------------------------
-				Postman
-
-.What is Postman?
-	` It is an api testing tool 
-	` used to hit the http request in backEnd
-
-.Whats is collection?
-	A group of API requests that can be executed together
-
-.how to run a collection ?
-
-
-
-
-
-
-
-
-
-
-
-======================================================================================================================================================
-
-

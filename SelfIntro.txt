@@ -1,3 +1,46 @@
+
+**Self-Introduction (Corrected):**
+
+Hi, my name is JayaPrakash, and I’m currently working as a Software Test Engineer. I have 2.7 years of experience in software testing.
+
+I began my career with a focus on manual testing, where I gained a strong understanding of core testing concepts such as test case design, defect identification, and bug reporting.
+
+Later, I transitioned into automation testing, gaining hands-on experience with tools like Selenium WebDriver, and frameworks such as BDD with Cucumber, TDD with TestNG and JUnit, as well as the Page Object Model (POM) design pattern.
+I also have experience in API testing—using Postman for manual testing and Rest Assured for automation.
+
+I’ve been involved in developing and maintaining automated test scripts to support faster, more reliable, and repeatable test execution across builds.
+
+I have strong experience in defect management using JIRA, including logging, tracking, and ensuring closure of bugs, while closely collaborating with development teams to deliver high-quality releases.
+
+I'm comfortable working with version control systems like Git and have hands-on experience integrating automated tests into CI/CD pipelines for continuous testing and deployment.
+
+In terms of methodology, I’ve been working in Agile-based projects since the start of my career and have actively participated in all key sprint ceremonies, including planning, daily stand-ups, reviews, and retrospectives.
+
+Additionally, I have basic knowledge of mobile automation using Appium, and I’m also familiar with databases like MySQL for validating data at the backend.
+
+I’m always keen to learn new tools and technologies and continuously strive to improve product quality and contribute to overall team efficiency.
+
+============================================================================================================================================================
+
+**Self-Introduction for Interview**
+
+My name is **Jayaprakash Ravi**, and I’m currently working as a **Software Test Engineer**. I have **2.7 years of experience** in both **manual and automation testing**.
+
+I specialize in testing web-based applications and have hands-on experience using **Selenium WebDriver with Java** for automating functional and regression test scenarios. I'm well-versed in **BDD frameworks using Cucumber**, and I’ve developed and maintained robust frameworks using **TestNG, JUnit, Maven**, and **Page Object Model** design patterns to ensure reusability and scalability.
+
+At my current organization, I’m working on a project called **Sayweee**, an online grocery delivery platform. Here, I’m responsible for creating and executing both manual and automated test cases, performing **end-to-end testing across UI, API, and backend systems**, and validating key flows such as login, search, payments, and loyalty.
+
+I also have solid experience in **API testing** using **Postman** and **Rest Assured**, validating payloads, status codes, and schema structures. Additionally, I perform **backend validations** using **SQL queries** to ensure data integrity.
+
+As part of the Agile team, I actively participate in all Scrum ceremonies including **daily stand-ups, sprint planning, and retrospectives**, and collaborate closely with developers and business analysts to ensure requirement clarity and coverage.
+
+I’m also comfortable with tools like **JIRA for defect tracking**, **Git for version control**, and **Jenkins for CI/CD** pipeline integration, which helps in achieving continuous testing and early bug detection.
+
+In terms of soft skills, I bring strong **analytical thinking**, **problem-solving abilities**, and a collaborative mindset that helps me work efficiently in cross-functional teams.
+
+I’m currently looking for a challenging role where I can contribute to quality assurance processes and continue growing my skills in automation and testing strategies.
+
+===============================================================================================================================================================
 JP Copilot
 ------------
 
@@ -73,4 +116,3 @@ Vicky BRo
 	I’ve worked closely with development teams to ensure high-quality product releases, written detailed test cases, identified and reported bugs, and contributed to process improvements. I’m passionate about delivering quality software and continuously improving my testing skills. I’m currently looking for opportunities where I can grow further, contribute to challenging projects, and work in a collaborative environment."
 
 =======================================================================================================================================================================
-
